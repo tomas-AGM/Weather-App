@@ -1,0 +1,236 @@
+@font-face{
+  font-family: MomcakeBold;
+  src: url("MomcakeBold-WyonA.otf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1{
+  font-size: 15vw;
+  padding-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app{
+  width:100%;
+  height: 200vh;
+  position: relative;
+  background: linear-gradient(#31d2f8, #0569db) no-repeat center center/cover;
+  color: #fff;
+  font-family: MomcakeBold;
+}
+
+.app:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .search{
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+  top: 18%;
+  left: 50%;
+  
+}
+
+.app input{
+  padding: .5rem 1.5rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.description{
+  font-size: 13vw;
+}
+
+.location {
+  font-size: 10vw;
+  background-color: rgba(255, 255, 255, 0.35);
+  border: 1px solid #fff;
+  padding: 3px;
+  border-radius: 5vw;
+  width: 60vw;
+  background-size: contain;
+  margin: 0 auto;
+  position: relative;
+  top: 3vh;
+}
+
+.location img {
+  max-width: 100%;
+  width: 4vw;
+  height: auto;
+}
+
+.dotMenu img{
+  position: absolute;
+  right: 5%;
+  top: 1%;
+  max-width: 100%;
+  width: 2.5vw;
+  height: auto;
+}
+
+.wind{
+  position: absolute;
+  left: 61%;
+  top: 36%;
+}
+
+.sunriseSunset{
+  padding-left: 4vw;
+  font-size: 5vw;
+  position: absolute;
+  left: 59%;
+  top: 38%;
+}
+
+.sunriseSunset img{
+  max-width: 44px;
+  position: absolute;
+  right: 95%;
+}
+
+.temp{
+  font-size: 15vw;
+  position: absolute;
+  right: 65%;
+  top: 36%;
+}
+
+.scrollDown {
+  position: absolute;
+  bottom: 51%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.scrollDown img{ 
+  animation: arrowAnimation 2.5s infinite;
+}
+
+.scrollUp {
+  position: absolute;
+  bottom: 44%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.scrollUp img{ 
+  animation: arrowAnimation 2.5s infinite;
+}
+
+.title{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 20%;
+}
+
+.forecast {
+  position: absolute;
+  transform: translateX(-50%);
+  top: calc(100vh + 7%);
+  left: 9%;
+  width: 11%;
+  height: 100px;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 88vw;
+  padding-top: 15vw;
+  padding-bottom: 10vw;
+  padding-left: 10px;
+}
+
+.forecast-item img {
+  position: absolute;
+  transform: translateX(100%);
+  max-width: 30vw;
+}
+
+.forecast-item .temperature {
+  font-size: 9vw;
+  font-weight: bold;
+}
+
+.separator{
+  position: absolute;
+  left: 45%;
+  top: 35.5%;
+  border-left: 2px solid white;
+  height: 5.5%;
+}
+
+.circle {
+  position: absolute;
+  right: 1vw;
+  top: -3vw;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speed{
+  position: absolute;
+  left: 14vw;
+  font-size: 10vw;
+}
+
+.speed::after {
+  content: 'mph';
+  position: absolute;
+  right: -12vw;
+  font-size: 7vw;
+}
+
+.arrow {
+  position: absolute;
+  right: 4.7vw;
+  top: -0.7vw;
+  width: 0;
+  height: 0;
+  border-left: 1.5vw solid transparent;
+  border-right: 1.5vw solid transparent;
+  border-bottom: 3vw solid black;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out; 
+}
+
+@keyframes arrowAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
