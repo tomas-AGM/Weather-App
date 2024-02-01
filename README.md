@@ -10,6 +10,6 @@ Technologies needed:
 
 To Run program:
 1) Enter package.json
-2) 2) Run File
+2) Run File
 
 This can als be done in the terminal, the virtual environment simply offers a UI.
