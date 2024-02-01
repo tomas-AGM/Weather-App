@@ -5,11 +5,11 @@ Screen Shot of application:
 ![AppImage](AppImage.png)
 
 Technologies needed:
-- Code editor (eg. Visual Studio Code)
-- Extension to run program (eg. Code Runner or similar)
+1) Code editor (eg. Visual Studio Code)
+2) Extension to run program (eg. Code Runner or similar)
 
 To Run program:
-- Enter package.json
-- Run File
+1) Enter package.json
+2) 2) Run File
 
 This can als be done in the terminal, the virtual environment simply offers a UI.
