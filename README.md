@@ -1,4 +1,4 @@
-# ** weatherApp **
+#weatherApp 
 
 Technologies needed:
 - Code editor (eg. Visual Studio Code)
