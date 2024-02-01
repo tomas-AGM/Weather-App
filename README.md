@@ -4,6 +4,10 @@ Screen Shot of application:
 
 ![AppImage](AppImage.png)
 
+See Exlanation and Project Evaluation:
+[GUI - Group 3 Evaluation.pdf](GUI%20-%20Group%203%20Evaluation.pdf)
+
+
 Technologies needed:
 1) Code editor (eg. Visual Studio Code)
 2) Extension to run program (eg. Code Runner or similar)
