@@ -1,6 +1,7 @@
 ﻿# weatherApp
 
 Screen Shot of application:
+
 ![AppImage](AppImage.png)
 
 Technologies needed:
@@ -12,4 +13,3 @@ To Run program:
 - Run File
 
 This can als be done in the terminal, the virtual environment simply offers a UI.
-
